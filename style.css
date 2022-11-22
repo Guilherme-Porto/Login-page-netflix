@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(./assets/bg-netflix.jpg);
+    background-size: cover; /* coloca a imagem pra ocupar toda a pagina */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll; /* Rolagem na página html */
+}
+
+header img {
+    display: flex;
+    width: 150px;
+}
+
+/* MAIN */
+
+.login {
+    background: rgba(0, 0, 0, 0.726); /* Aplica um background quase transparente*/
+    border-radius: 10px;
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+
+.login h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.login .box-user {
+    position: relative;
+}
+
+.login .box-user input {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    margin-left: -10px;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(69, 69, 69);
+    margin-bottom: 30px;
+}
+
+.login .box-user label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #a09f9f;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 1.5s;
+}
+
+.login .box-user input:focus~label, /* quando o mouse estiver sobre o input, ele vai aplicar um efeito no label */
+.login .box-user input:valid~label
+{
+    top: -8px;
+    font-size: 10px;
+    left: 0;
+    padding: -5px;
+    margin-top: -3px;
+}
+
+.login .btn {
+    background-color: red;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Espaço entre as letras */
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    align-items: center;
+    transition: .5s;
+    margin-left: -10px;
+    overflow: hidden; /* Esconde as bordas do efeito */
+}
+
+.login .info {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.login .info label {
+    color: #a09f9f;
+    margin-left: -10px;
+}
+
+.login .info a {
+    color: #a09f9f;
+    text-decoration: none;
+}
+.login .info a:hover {
+    text-decoration: underline;
+}
+
+.login .assine {
+    color: #a09f9f;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+.login .assine a {
+    color: #fff;
+    text-decoration: none;
+}
+.login .assine a:hover {
+    text-decoration: underline;
+}
+
+.login p {
+    color: #fff;
+    font-size: 12px;
+    gap: 10px;
+    margin-top: 25px;
+    display: block;
+    overflow: hidden;
+}
+
+.login p a {
+    color: blue;
+    text-decoration: none;
+}
+.login p a:hover {
+    text-decoration: underline;
+}
